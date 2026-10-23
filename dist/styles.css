@@ -45,3 +45,11 @@ button,.pin,.pt{touch-action:manipulation;-webkit-tap-highlight-color:transparen
 .splash h1{font-size:2.2rem}.top-actions .btn-ghost{display:none}.timeline{margin-left:6px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ===== v4: responsive ทุกขนาดจอ ===== */
+html,body{overflow-x:hidden}.layout{grid-template-columns:260px minmax(0,1fr)}.content{min-width:0;max-width:1320px;width:100%;margin-inline:auto}.grid>*,.list-item>*,.toolbar>*{min-width:0}.toolbar{flex-wrap:wrap}
+@media(max-width:1100px){.layout{grid-template-columns:220px minmax(0,1fr)}.content{padding:24px 20px}}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.grid-3,.grid-2{grid-template-columns:minmax(0,1fr)}.page-head{flex-wrap:wrap;gap:12px}}
+@media(max-width:620px){.rc-l{display:none}.role-chip{padding:0;width:42px;height:42px;justify-content:center;font-size:1.25rem}.top-actions{gap:8px}.top-actions .btn-ghost{display:inline-flex!important;min-height:42px;padding:0 12px;font-size:.88rem}.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.page-head .actions .btn{flex:1}}
+.lmap{height:300px;border-radius:16px;z-index:0;border:1px solid var(--line)}.lpin{font-size:30px;line-height:1;filter:drop-shadow(0 2px 2px rgba(0,0,0,.4))}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.cw{text-align:center;color:var(--muted);font-size:.8rem;padding:6px 0}.cd{min-height:84px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px;text-align:left;display:flex;flex-direction:column;gap:3px}.cd>span{font-weight:700;font-size:.9rem}.cd.today{border-color:var(--brand);border-width:2px}.cd.sel{background:var(--soft);outline:2px solid var(--brand)}.ev{display:block;border-radius:6px;font-style:normal;font-size:.72rem;padding:2px 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ev em{font-style:normal}.ev.green{background:#dcfce7;color:#14532d}.ev.amber{background:#fef3c7;color:#92400e}.ev.blue{background:#dbeafe;color:#1e40af}
+@media(max-width:620px){.cd{min-height:54px;padding:4px;flex-direction:row;flex-wrap:wrap;justify-content:center;align-content:flex-start;gap:3px}.cd>span{width:100%;text-align:center}.ev{display:inline-block;width:9px;height:9px;padding:0;border-radius:50%}.ev em{display:none}}
